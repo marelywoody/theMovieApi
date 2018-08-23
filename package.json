@@ -1,11 +1,25 @@
 {
   "name": "the-movie-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslintinit": "eslint --init",
+    "eslint":"eslint --ext .js src/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marelywoody/theMovieApi.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/marelywoody/theMovieApi/issues"
+  },
+  "homepage": "https://github.com/marelywoody/theMovieApi#readme",
+  "description": "",
+  "dependencies": {
+    "eslint": "^5.4.0"
+  }
 }
