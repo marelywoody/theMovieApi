@@ -4,15 +4,26 @@
   <meta charset="UTF-8">
   <title>Movie</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <input type="search"  id="search-movie">
-  <input type="button" value="Buscar" id="buscar">
-  <input type="button" value="batman" id="batman" class="botton">
-  <input type="button" value="Wonder Woman" id="wonder-woman">
-  <input type="button" value="superman" id="super-man">
-  <div id="draw"></div>
-  <script src="js/dom.js"></script>
-  <script src="js/data.js"></script>
+  <div class="container-fluid">
+    <header><h1 id="headr">A.Movie</h1></header>
+    <div id="search" class="row">
+      <div class="col-xl-4 offset-4">
+        <input type="search"  id="search-movie" size="35">
+        <input type="button" value="Buscar" id="buscar" class="btn btn-outline-dark">
+        <input type="button" value="batman" id="batman" class="btn btn-outline-info">
+        <input type="button" value="Wonder Woman" id="wonder-woman" class="btn btn-outline-info">
+        <input type="button" value="superman" id="super-man" class="btn btn-outline-info">
+      </div>
+    </div>
+    <div id="draw" class="row">
+    
+    </div>
+    <script src="js/dom.js"></script>
+    <script src="js/data.js"></script>
+  </div>
 </body>
 </html>

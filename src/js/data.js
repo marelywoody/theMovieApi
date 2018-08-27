@@ -15,18 +15,21 @@ window.drawMovie = (data) => {
   let title;
   let type;
   let year;
+  let id;
   let search = data['Search'];
   for (i in search) {
     let getMovies =Object.values(search[i]);
     title = getMovies[0];
     year = getMovies[1];
+    id = getMovies[2]
     type = getMovies[3];
     poster = getMovies[4];
     let obj = {
       poster: poster,
       title: title,
       type: type,
-      year: year
+      year: year,
+      id: id
     };
     arr.push(obj);
   }

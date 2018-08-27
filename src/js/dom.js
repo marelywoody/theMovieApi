@@ -29,7 +29,10 @@ const drawInfo = (data) => {
   let getInfo = drawMovie(data);
   draw.innerHTML = ' ';
   getInfo.forEach((element) => {
-    console.log(element.poster);
-    draw.innerHTML += `<img src="${element.poster}"><p>${element.title}<br>${element.type}<br>${element.year}</p>`
+    draw.innerHTML += `<a><img src="${element.poster}" id="posterImg" class="img-thumbnail col-md">
+                       <p class="infoMovie">${element.title}</p>
+                       <p class="infoMovie">${element.type} </p>
+                       <p class="infoMovie">${element.year}</p>
+                       </a>`;
   });
 };
