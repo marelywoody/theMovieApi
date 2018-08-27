@@ -1,6 +1,6 @@
 let url;
 window.getMovie = (movie) => {
-  url = `http://www.omdbapi.com/?apikey=e7ca792b&s=${movie}`
+  url = `https://www.omdbapi.com/?apikey=e7ca792b&s=${movie}`
   fetch(url)
   .then((resp) => resp.json())
   .then((data) => {
